@@ -20,23 +20,23 @@ const CookieConsent: React.FC = () => {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-[100] p-4">
-      <div className="max-w-4xl mx-auto bg-slate-900 border border-slate-700 text-white p-6 rounded-2xl shadow-2xl flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="text-sm">
-          <p className="font-semibold mb-1">Protection de votre vie privée</p>
-          <p className="text-slate-400">
-            Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant à naviguer, vous acceptez notre utilisation des cookies.
+      <div className="max-w-4xl mx-auto bg-white border border-[#6fc201]/20 text-[#1a2e05] p-6 rounded-2xl shadow-[0_-20px_50px_rgba(0,0,0,0.1)] flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="text-sm text-center md:text-left">
+          <p className="font-extrabold mb-1 text-[#6fc201] uppercase tracking-wider">Respect de votre vie privée</p>
+          <p className="text-neutral-500 font-medium">
+            Nous utilisons des cookies essentiels pour le bon fonctionnement de notre site et l'analyse de notre trafic local.
           </p>
         </div>
         <div className="flex space-x-3 shrink-0">
           <button 
             onClick={accept}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-bold transition-colors"
+            className="gradient-brand hover:brightness-110 text-white px-6 py-2 rounded-full text-sm font-bold transition-all shadow-lg shadow-[#6fc201]/20"
           >
-            Accepter tout
+            Accepter
           </button>
           <button 
             onClick={() => setShow(false)}
-            className="text-slate-400 hover:text-white px-4 py-2 text-sm transition-colors"
+            className="text-neutral-400 hover:text-[#6fc201] px-4 py-2 text-sm font-bold transition-colors"
           >
             Refuser
           </button>

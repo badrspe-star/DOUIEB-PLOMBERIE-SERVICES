@@ -23,12 +23,12 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="bg-blue-600 p-2 rounded-lg">
+              <div className="bg-[#6fc201] p-2 rounded-lg">
                 <Droplets className="h-6 w-6 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-extrabold text-blue-900 leading-tight">DOUIEB</span>
-                <span className="text-xs font-semibold text-blue-600 tracking-wider">PLOMBERIE SERVICES</span>
+                <span className="text-xl font-extrabold text-neutral-900 leading-tight tracking-tight">DOUIEB</span>
+                <span className="text-xs font-semibold text-[#6fc201] tracking-wider uppercase">Plomberie Services</span>
               </div>
             </Link>
           </div>
@@ -39,8 +39,8 @@ const Navbar: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-semibold transition-colors hover:text-blue-600 ${
-                  isActive(link.path) ? 'text-blue-600' : 'text-slate-600'
+                className={`text-sm font-semibold transition-all hover:text-[#6fc201] ${
+                  isActive(link.path) ? 'text-[#6fc201]' : 'text-neutral-600'
                 }`}
               >
                 {link.name}
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
             ))}
             <a
               href={`tel:${COMPANY.phone}`}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-full font-bold text-sm flex items-center space-x-2 transition-all transform hover:scale-105 shadow-lg"
+              className="gradient-brand gradient-brand-hover text-white px-5 py-2.5 rounded-full font-bold text-sm flex items-center space-x-2 transition-all transform hover:scale-105 shadow-lg shadow-[#6fc201]/20"
             >
               <Phone className="w-4 h-4" />
               <span>{COMPANY.phoneDisplay}</span>
@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-600 hover:text-blue-600 focus:outline-none"
+              className="text-neutral-600 hover:text-[#6fc201] focus:outline-none"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-slate-100">
+        <div className="md:hidden bg-white border-t border-neutral-100">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <Link
@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
                 to={link.path}
                 onClick={() => setIsOpen(false)}
                 className={`block px-3 py-4 text-base font-semibold ${
-                  isActive(link.path) ? 'text-blue-600 bg-blue-50' : 'text-slate-600'
+                  isActive(link.path) ? 'text-[#6fc201] bg-neutral-50' : 'text-neutral-600'
                 }`}
               >
                 {link.name}
@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
             ))}
             <a
               href={`tel:${COMPANY.phone}`}
-              className="block w-full text-center bg-orange-500 text-white px-3 py-4 rounded-md font-bold text-lg"
+              className="block w-full text-center gradient-brand text-white px-3 py-4 rounded-md font-bold text-lg"
             >
               Appeler : {COMPANY.phoneDisplay}
             </a>

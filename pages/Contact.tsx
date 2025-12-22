@@ -8,17 +8,16 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Logic for form submission
     setSubmitted(true);
   };
 
   return (
-    <div className="bg-slate-50 min-h-screen">
-      <div className="bg-blue-600 text-white py-20 px-4">
+    <div className="bg-white min-h-screen">
+      <div className="gradient-brand text-white py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-black mb-4">Contactez-nous</h1>
-          <p className="text-blue-100 max-w-xl mx-auto">
-            Une question ou une demande de devis ? Nous vous répondons sous 24 heures maximum.
+          <h1 className="text-4xl md:text-5xl font-black mb-4 uppercase">Contactez-nous</h1>
+          <p className="text-[#f0f9e6] max-w-xl mx-auto font-medium">
+            Une question ou une demande d'intervention ? Nous vous répondons avec réactivité.
           </p>
         </div>
       </div>
@@ -27,46 +26,46 @@ const Contact: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Info Side */}
           <div className="lg:col-span-1 space-y-8">
-            <div className="bg-white p-8 rounded-3xl shadow-lg">
-              <h3 className="text-xl font-bold text-slate-900 mb-8">Coordonnées</h3>
+            <div className="bg-white p-8 rounded-3xl shadow-xl border border-[#f0f9e6]">
+              <h3 className="text-xl font-bold text-[#1a2e05] mb-8 uppercase tracking-wider">Coordonnées</h3>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-blue-50 p-3 rounded-xl text-blue-600">
+                  <div className="bg-[#f0f9e6] p-3 rounded-xl text-[#6fc201]">
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-sm text-slate-400 font-medium">Téléphone (Urgence)</p>
-                    <a href={`tel:${COMPANY.phone}`} className="text-lg font-bold text-slate-900 hover:text-blue-600">{COMPANY.phoneDisplay}</a>
+                    <p className="text-xs text-neutral-400 font-bold uppercase tracking-widest">Urgence</p>
+                    <a href={`tel:${COMPANY.phone}`} className="text-lg font-bold text-[#1a2e05] hover:text-[#6fc201] transition-colors">{COMPANY.phoneDisplay}</a>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="bg-blue-50 p-3 rounded-xl text-blue-600">
+                  <div className="bg-[#f0f9e6] p-3 rounded-xl text-[#6fc201]">
                     <Mail className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-sm text-slate-400 font-medium">Email</p>
-                    <p className="text-lg font-bold text-slate-900">contact@douieb-plomberie.fr</p>
+                    <p className="text-xs text-neutral-400 font-bold uppercase tracking-widest">Email</p>
+                    <p className="text-lg font-bold text-[#1a2e05]">contact@douieb-plomberie.fr</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <div className="bg-blue-50 p-3 rounded-xl text-blue-600">
+                  <div className="bg-[#f0f9e6] p-3 rounded-xl text-[#6fc201]">
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-sm text-slate-400 font-medium">Localisation</p>
-                    <p className="text-lg font-bold text-slate-900 leading-tight">{COMPANY.address}</p>
+                    <p className="text-xs text-neutral-400 font-bold uppercase tracking-widest">Adresse</p>
+                    <p className="text-lg font-bold text-[#1a2e05] leading-tight">{COMPANY.address}</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-slate-900 p-8 rounded-3xl shadow-lg text-white">
-              <h3 className="text-xl font-bold mb-6">Disponibilité</h3>
-              <ul className="space-y-3 text-sm">
+            <div className="bg-[#f0f9e6] p-8 rounded-3xl border border-[#6fc201]/10 text-[#1a2e05]">
+              <h3 className="text-xl font-bold mb-6 uppercase tracking-wider">Horaires de Service</h3>
+              <ul className="space-y-3 text-sm font-semibold">
                 {Object.entries(COMPANY.hours).map(([day, hour]) => (
-                  <li key={day} className="flex justify-between border-b border-slate-800 pb-2">
-                    <span className="capitalize">{day}</span>
-                    <span className={hour.includes('24h') ? 'text-green-400' : ''}>{hour}</span>
+                  <li key={day} className="flex justify-between border-b border-[#6fc201]/10 pb-2">
+                    <span className="capitalize text-neutral-500">{day}</span>
+                    <span className={hour.includes('24h') ? 'text-[#6fc201]' : 'text-neutral-700'}>{hour}</span>
                   </li>
                 ))}
               </ul>
@@ -75,77 +74,74 @@ const Contact: React.FC = () => {
 
           {/* Form Side */}
           <div className="lg:col-span-2">
-            <div className="bg-white p-10 rounded-3xl shadow-lg min-h-[600px] flex flex-col">
+            <div className="bg-white p-10 rounded-3xl shadow-2xl min-h-[600px] flex flex-col border border-[#f0f9e6]">
               {submitted ? (
                 <div className="flex-grow flex flex-col items-center justify-center text-center space-y-6">
-                  <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center">
-                    <CheckCircle className="w-12 h-12" />
+                  <div className="w-24 h-24 bg-[#f0f9e6] text-[#6fc201] rounded-full flex items-center justify-center">
+                    <CheckCircle className="w-14 h-14" />
                   </div>
-                  <h2 className="text-3xl font-black text-slate-900">Message envoyé !</h2>
-                  <p className="text-slate-500 max-w-sm">
-                    Merci de votre confiance. Notre équipe étudie votre demande et vous recontactera très rapidement.
+                  <h2 className="text-3xl font-black text-[#1a2e05]">Message transmis !</h2>
+                  <p className="text-neutral-500 max-w-sm">
+                    Nous avons bien reçu votre demande. Un artisan spécialisé reviendra vers vous très rapidement.
                   </p>
                   <button 
                     onClick={() => setSubmitted(false)}
-                    className="text-blue-600 font-bold border-b-2 border-blue-600"
+                    className="gradient-brand text-white px-8 py-3 rounded-full font-bold shadow-lg"
                   >
                     Envoyer un autre message
                   </button>
                 </div>
               ) : (
                 <>
-                  <h2 className="text-2xl font-bold text-slate-900 mb-8">Envoyez-nous un message</h2>
+                  <h2 className="text-2xl font-bold text-[#1a2e05] mb-8 uppercase tracking-tight">Formulaire de Contact</h2>
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="space-y-2">
-                        <label className="text-sm font-bold text-slate-700">Nom Complet</label>
+                        <label className="text-sm font-bold text-neutral-600">Nom / Prénom</label>
                         <input 
                           required
                           type="text" 
-                          placeholder="Ex: Jean Dupont"
-                          className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-100 outline-none transition-all"
+                          placeholder="Jean Dupont"
+                          className="w-full px-4 py-3 rounded-xl border border-neutral-100 bg-neutral-50 focus:border-[#6fc201] focus:ring-4 focus:ring-[#6fc201]/10 outline-none transition-all"
                         />
                       </div>
                       <div className="space-y-2">
-                        <label className="text-sm font-bold text-slate-700">Email</label>
+                        <label className="text-sm font-bold text-neutral-600">Email professionnel / personnel</label>
                         <input 
                           required
                           type="email" 
-                          placeholder="email@exemple.com"
-                          className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-100 outline-none transition-all"
+                          placeholder="jean@exemple.fr"
+                          className="w-full px-4 py-3 rounded-xl border border-neutral-100 bg-neutral-50 focus:border-[#6fc201] focus:ring-4 focus:ring-[#6fc201]/10 outline-none transition-all"
                         />
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-bold text-slate-700">Sujet de la demande</label>
-                      <select className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 outline-none bg-white">
-                        <option>Dépannage Urgent</option>
-                        <option>Installation Chauffage</option>
-                        <option>Rénovation Salle de Bain</option>
-                        <option>Devis Gratuit</option>
-                        <option>Autre</option>
+                      <label className="text-sm font-bold text-neutral-600">Nature du besoin</label>
+                      <select className="w-full px-4 py-3 rounded-xl border border-neutral-100 bg-neutral-50 focus:border-[#6fc201] outline-none">
+                        <option>Dépannage Urgent (Fuite, Panne)</option>
+                        <option>Installation Chauffage / Pompe à Chaleur</option>
+                        <option>Projet Salle de Bain</option>
+                        <option>Maintenance annuelle</option>
+                        <option>Autre demande</option>
                       </select>
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-bold text-slate-700">Votre Message</label>
+                      <label className="text-sm font-bold text-neutral-600">Description détaillée</label>
                       <textarea 
                         required
                         rows={6}
-                        placeholder="Détaillez votre besoin ici..."
-                        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-100 outline-none transition-all resize-none"
+                        placeholder="Expliquez-nous votre situation..."
+                        className="w-full px-4 py-3 rounded-xl border border-neutral-100 bg-neutral-50 focus:border-[#6fc201] focus:ring-4 focus:ring-[#6fc201]/10 outline-none transition-all resize-none"
                       ></textarea>
                     </div>
                     <button 
                       type="submit"
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white font-black py-4 rounded-xl shadow-lg shadow-blue-600/20 flex items-center justify-center space-x-3 transition-all transform hover:-translate-y-1"
+                      className="w-full gradient-brand hover:brightness-110 text-white font-black py-4 rounded-xl shadow-xl shadow-[#6fc201]/20 flex items-center justify-center space-x-3 transition-all transform hover:-translate-y-1"
                     >
                       <Send className="w-5 h-5" />
-                      <span>Envoyer ma demande</span>
+                      <span>Envoyer la demande</span>
                     </button>
                   </form>
-                  <p className="mt-8 text-xs text-slate-400 text-center">
-                    En envoyant ce formulaire, vous acceptez notre politique de confidentialité et l'utilisation de vos données pour la gestion de votre demande.
-                  </p>
                 </>
               )}
             </div>

@@ -67,16 +67,16 @@ export const VALUES = [
   {
     title: "Réactivité 24/7",
     description: "Parce qu'une fuite n'attend pas, nous sommes mobilisés jour et nuit.",
-    icon: <Clock className="w-6 h-6 text-orange-500" />
+    icon: <Clock className="w-6 h-6 text-[#6fc201]" />
   },
   {
     title: "Expertise Certifiée",
     description: "Plus de 10 ans d'expérience dans les métiers du chauffage et de l'eau.",
-    icon: <ShieldCheck className="w-6 h-6 text-orange-500" />
+    icon: <ShieldCheck className="w-6 h-6 text-[#6fc201]" />
   },
   {
     title: "Transparence",
     description: "Devis gratuits avant intervention, sans frais cachés ni mauvaises surprises.",
-    icon: <Star className="w-6 h-6 text-orange-500" />
+    icon: <Star className="w-6 h-6 text-[#6fc201]" />
   }
 ];
