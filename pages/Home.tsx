@@ -41,8 +41,8 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-16">
           <div className="flex-1">
             <img 
-              src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=1000" 
-              alt="Artisan Plombier" 
+              src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&q=80&w=1000" 
+              alt="Artisan Plombier Professionnel" 
               className="rounded-3xl shadow-2xl"
             />
           </div>

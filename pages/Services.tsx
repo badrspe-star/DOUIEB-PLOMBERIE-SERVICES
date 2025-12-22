@@ -3,6 +3,13 @@ import React from 'react';
 import { SERVICES, COMPANY } from '../constants';
 import { Phone, CheckCircle2 } from 'lucide-react';
 
+const SERVICE_IMAGES: Record<string, string> = {
+  'depannage': 'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=800',
+  'chauffage': 'https://images.unsplash.com/photo-1621905252507-b35220adcfba?auto=format&fit=crop&q=80&w=800',
+  'sanitaire': 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&q=80&w=800',
+  'salle-de-bain': 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800'
+};
+
 const ServicesPage: React.FC = () => {
   return (
     <div className="bg-slate-50 min-h-screen pb-24">
@@ -27,7 +34,7 @@ const ServicesPage: React.FC = () => {
             >
               <div className="lg:w-1/2">
                 <img 
-                  src={`https://images.unsplash.com/photo-${1581578731548 + index * 100}?auto=format&fit=crop&q=80&w=800`} 
+                  src={SERVICE_IMAGES[service.id] || 'https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&q=80&w=800'} 
                   alt={service.title}
                   className="w-full h-full object-cover min-h-[400px]"
                 />

@@ -10,8 +10,8 @@ const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1920" 
-          alt="Plumbing Background" 
+          src="https://images.unsplash.com/photo-1585704032915-c3400ca1f96d?auto=format&fit=crop&q=80&w=1920" 
+          alt="Artisan Plombier à l'œuvre" 
           className="w-full h-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent"></div>

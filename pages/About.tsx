@@ -46,8 +46,8 @@ const About: React.FC = () => {
           <div className="lg:w-1/2">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1505798587931-471a932ad3e9?auto=format&fit=crop&q=80&w=800" 
-                alt="Plumbing Team" 
+                src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&q=80&w=800" 
+                alt="Travail de Plomberie Précis" 
                 className="rounded-3xl shadow-2xl relative z-10"
               />
               <div className="absolute -top-6 -right-6 w-full h-full border-4 border-blue-600 rounded-3xl z-0 hidden lg:block"></div>
