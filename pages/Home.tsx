@@ -41,7 +41,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-16">
           <div className="flex-1 order-2 lg:order-1">
             <h2 className="text-[#6fc201] font-bold uppercase tracking-widest text-sm mb-3">Pourquoi nous choisir ?</h2>
-            <h3 className="text-3xl md:text-4xl font-extrabold text-[#1a2e05] mb-8">Votre confort, notre priorité absolue à Limoges</h3>
+            <h3 className="text-3xl md:text-4xl font-extrabold text-[#1a2e05] mb-8">Votre confort, notre priorité absolue à {COMPANY.city}</h3>
             <div className="space-y-8">
               {VALUES.map((value, idx) => (
                 <div key={idx} className="flex space-x-4">
@@ -57,25 +57,25 @@ const Home: React.FC = () => {
             </div>
             <div className="mt-12 p-6 bg-white rounded-2xl border border-[#6fc201]/10 flex items-center justify-between shadow-sm">
               <div>
-                <p className="text-2xl font-black text-[#1a2e05]">4.7/5</p>
+                <p className="text-2xl font-black text-[#1a2e05]">{COMPANY.rating}/5</p>
                 <div className="flex text-[#6fc201]">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-current" />
                   ))}
                 </div>
-                <p className="text-xs text-neutral-400 font-medium mt-1">Avis certifiés Google</p>
+                <p className="text-xs text-neutral-400 font-medium mt-1">Avis clients vérifiés</p>
               </div>
               <div className="h-12 w-px bg-[#f0f9e6]"></div>
               <div className="text-center">
                 <p className="text-sm font-bold text-[#1a2e05]">Artisan Local</p>
-                <p className="text-xs text-neutral-400">Limoges & 87</p>
+                <p className="text-xs text-neutral-400">{COMPANY.city}</p>
               </div>
             </div>
           </div>
           <div className="flex-1 order-1 lg:order-2">
             <img 
               src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&q=80&w=1000" 
-              alt="Artisan Plombier Professionnel" 
+              alt="Artisan Professionnel" 
               className="rounded-3xl shadow-2xl border-8 border-white"
             />
           </div>
@@ -87,7 +87,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <p className="text-4xl font-black text-white mb-2">10+</p>
+              <p className="text-4xl font-black text-white mb-2">15+</p>
               <p className="text-[#f0f9e6] text-xs font-bold uppercase tracking-widest">Ans d'expérience</p>
             </div>
             <div>

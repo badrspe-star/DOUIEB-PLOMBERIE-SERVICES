@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#6fc201] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#6fc201]"></span>
               </span>
-              <span className="text-[#6fc201] text-xs font-bold uppercase tracking-wider">Intervention 24h/24 à Limoges</span>
+              <span className="text-[#6fc201] text-xs font-bold uppercase tracking-wider">Intervention 24h/24 à {COMPANY.city}</span>
             </div>
             
             <h1 className="animate-fade-up delay-100 text-4xl md:text-6xl font-extrabold text-[#1a2e05] leading-tight mb-6">
@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
             </h1>
             
             <p className="animate-fade-up delay-200 text-lg text-neutral-600 mb-10 leading-relaxed">
-              DOUIEB PLOMBERIE SERVICES intervient en urgence chez vous à Limoges. Profitez d'une expertise reconnue, de tarifs transparents et d'un service disponible 7j/7.
+              {COMPANY.name} intervient en urgence chez vous à {COMPANY.city}. Profitez d'une expertise reconnue, de tarifs transparents et d'un service disponible 7j/7.
             </p>
             
             <div className="animate-fade-up delay-300 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
               </div>
               <div className="hidden md:flex items-center space-x-3 text-neutral-600">
                 <Star className="w-5 h-5 text-[#6fc201] fill-current" />
-                <span className="text-sm font-semibold">4.7/5 sur Google</span>
+                <span className="text-sm font-semibold">{COMPANY.rating}/5 Google</span>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
               
               <img 
                 src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=1200" 
-                alt="Artisan Plombier Professionnel à Limoges" 
+                alt="Artisan Plombier Professionnel" 
                 className="animate-scale-in delay-200 relative z-10 w-full h-[450px] lg:h-[550px] object-cover rounded-[2rem] shadow-2xl border-4 border-white"
               />
               

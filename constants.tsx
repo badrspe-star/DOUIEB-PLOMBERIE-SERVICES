@@ -7,20 +7,18 @@ import {
   Bath, 
   Clock, 
   ShieldCheck, 
-  MapPin, 
-  Phone, 
   Star 
 } from 'lucide-react';
 
 export const COMPANY = {
-  name: "DOUIEB PLOMBERIE SERVICES",
-  type: "Plombier Chauffagiste",
-  city: "Limoges",
-  address: "25 all Fabre d'Eglantine, 87280 Limoges",
-  phone: "+33651745539",
-  phoneDisplay: "06 51 74 55 39",
-  rating: 4.7,
-  reviewsCount: 34,
+  name: "AQUA-TECH SERVICES",
+  type: "Artisan Plombier Chauffagiste",
+  city: "Val-de-Serein",
+  address: "42 Avenue des Artisans, 00000 Val-de-Serein",
+  phone: "+33123456789",
+  phoneDisplay: "01 23 45 67 89",
+  rating: 4.8,
+  reviewsCount: 52,
   hours: {
     lundi: "Ouvert 24h/24",
     mardi: "Ouvert 24h/24",
@@ -28,7 +26,7 @@ export const COMPANY = {
     jeudi: "Ouvert 24h/24",
     vendredi: "Ouvert 24h/24",
     samedi: "Ouvert 24h/24",
-    dimanche: "09:00–17:00"
+    dimanche: "09:00–18:00"
   }
 };
 
@@ -36,47 +34,47 @@ export const SERVICES = [
   {
     id: 'depannage',
     title: "Dépannage d'Urgence",
-    description: "Intervention rapide 24h/24 pour fuites, débouchage et pannes critiques.",
+    description: "Intervention immédiate 24h/24 pour toutes vos urgences hydrauliques.",
     icon: <Wrench className="w-8 h-8" />,
-    fullDescription: "Une fuite d'eau, un WC bouché ou un chauffe-eau en panne ? Nos techniciens interviennent en moins de 30 minutes à Limoges et ses alentours pour sécuriser vos installations."
+    fullDescription: "Une fuite d'eau critique ou une canalisation bouchée ? Nos experts interviennent en moins de 30 minutes dans toute la région de Val-de-Serein pour sécuriser votre domicile."
   },
   {
     id: 'chauffage',
-    title: "Chauffage & Chaudière",
-    description: "Installation, entretien et réparation de tous types de systèmes de chauffage.",
+    title: "Thermique & Chauffage",
+    description: "Installation et maintenance de vos systèmes de chauffage et chauffe-eau.",
     icon: <Flame className="w-8 h-8" />,
-    fullDescription: "Nous assurons la pose et la maintenance de chaudières gaz, électriques et pompes à chaleur. Profitez d'un confort thermique optimal toute l'année."
+    fullDescription: "Nous installons et entretenons vos chaudières et pompes à chaleur pour garantir votre confort thermique. Optimisez votre consommation énergétique avec nos solutions modernes."
   },
   {
     id: 'sanitaire',
-    title: "Plomberie Sanitaire",
-    description: "Installation de robinetterie, tuyauterie et raccordements complexes.",
+    title: "Réseaux Sanitaires",
+    description: "Expertise complète en tuyauterie, robinetterie et évacuation.",
     icon: <Droplets className="w-8 h-8" />,
-    fullDescription: "De la pose d'un nouveau robinet à la refonte complète de votre réseau d'eau, nous garantissons des soudures et raccordements durables."
+    fullDescription: "Installation, modification ou réparation de vos circuits d'eau. Nous utilisons des matériaux de haute qualité pour des raccordements durables et sans fuite."
   },
   {
     id: 'salle-de-bain',
-    title: "Rénovation Salle de Bain",
-    description: "Création et aménagement complet de votre espace bien-être.",
+    title: "Projets Salle de Bain",
+    description: "De la conception à la réalisation de votre espace de bain sur-mesure.",
     icon: <Bath className="w-8 h-8" />,
-    fullDescription: "Nous transformons votre salle de bain : douche à l'italienne, pose de vasque, carrelage et optimisation de l'espace pour un résultat moderne."
+    fullDescription: "Transformez votre salle de bain en un espace de détente. Douche italienne, robinetterie encastrée et carrelage : nous gérons votre projet de A à Z."
   }
 ];
 
 export const VALUES = [
   {
-    title: "Réactivité 24/7",
-    description: "Parce qu'une fuite n'attend pas, nous sommes mobilisés jour et nuit.",
+    title: "Disponibilité Totale",
+    description: "Interventions d'urgence garanties de jour comme de nuit, 7 jours sur 7.",
     icon: <Clock className="w-6 h-6 text-[#6fc201]" />
   },
   {
-    title: "Expertise Certifiée",
-    description: "Plus de 10 ans d'expérience dans les métiers du chauffage et de l'eau.",
+    title: "Savoir-faire Expert",
+    description: "Une équipe d'artisans qualifiés bénéficiant de 15 ans d'expérience métier.",
     icon: <ShieldCheck className="w-6 h-6 text-[#6fc201]" />
   },
   {
-    title: "Transparence",
-    description: "Devis gratuits avant intervention, sans frais cachés ni mauvaises surprises.",
+    title: "Éthique & Prix",
+    description: "Tarification claire, devis détaillés et conseils pour économiser l'eau.",
     icon: <Star className="w-6 h-6 text-[#6fc201]" />
   }
 ];

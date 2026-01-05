@@ -9,10 +9,10 @@ const About: React.FC = () => {
       {/* Hero */}
       <div className="bg-[#f0f9e6] py-24 px-4 text-center border-b border-[#6fc201]/10">
         <h1 className="text-4xl md:text-5xl font-black mb-6 uppercase tracking-tight text-[#1a2e05]">
-          DOUIEB <span className="text-[#6fc201]">PLOMBERIE</span> SERVICES
+          AQUA-TECH <span className="text-[#6fc201]">SERVICES</span>
         </h1>
         <p className="text-neutral-600 max-w-2xl mx-auto text-lg italic">
-          "L'excellence au service de votre sérénité à Limoges depuis plus de 10 ans."
+          "L'excellence au service de votre sérénité à {COMPANY.city}."
         </p>
       </div>
 
@@ -21,10 +21,10 @@ const About: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2">
             <h2 className="text-[#6fc201] font-bold uppercase tracking-widest text-sm mb-4">Notre Histoire</h2>
-            <h3 className="text-3xl md:text-4xl font-extrabold text-[#1a2e05] mb-6">Une entreprise familiale ancrée dans le Limousin</h3>
+            <h3 className="text-3xl md:text-4xl font-extrabold text-[#1a2e05] mb-6">Une passion pour l'artisanat local</h3>
             <div className="space-y-6 text-neutral-600 leading-relaxed text-lg">
               <p>
-                Fondée avec la volonté de proposer un service de plomberie authentique, DOUIEB PLOMBERIE SERVICES est devenue une référence à Limoges. Nous protégeons votre habitat avec passion et rigueur.
+                Fondée avec la volonté de proposer un service de plomberie authentique, notre structure est devenue une référence locale. Nous protégeons votre habitat avec passion et rigueur.
               </p>
               <p>
                 Notre équipe d'artisans allie savoir-faire traditionnel et technologies modernes pour vous garantir des installations pérennes et économes en énergie.
@@ -34,13 +34,13 @@ const About: React.FC = () => {
                   <div className="bg-[#f0f9e6] p-2 rounded-lg text-[#6fc201]">
                     <Users className="w-5 h-5" />
                   </div>
-                  <span className="font-bold text-[#1a2e05]">Artisans locaux</span>
+                  <span className="font-bold text-[#1a2e05]">Experts locaux</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="bg-[#f0f9e6] p-2 rounded-lg text-[#6fc201]">
                     <Trophy className="w-5 h-5" />
                   </div>
-                  <span className="font-bold text-[#1a2e05]">10+ Ans de métier</span>
+                  <span className="font-bold text-[#1a2e05]">15+ Ans de métier</span>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ const About: React.FC = () => {
               Où intervenons-nous ?
             </h3>
             <p className="mb-8 text-neutral-600">
-              Basés à Limoges, nous couvrons la Haute-Vienne dans un rayon de 50km pour tous vos travaux et urgences.
+              Basés à {COMPANY.city}, nous couvrons toute la zone périurbaine dans un rayon de 40km pour tous vos travaux et urgences.
             </p>
             <address className="not-italic text-lg space-y-4">
               <div className="p-4 bg-[#f0f9e6] rounded-xl border-l-4 border-[#6fc201]">
@@ -100,8 +100,8 @@ const About: React.FC = () => {
           </div>
           <div className="md:w-1/2 h-80 md:h-auto bg-[#f0f9e6]/50">
             <iframe 
-              title="Localisation Limoges"
-              src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.2526543166847!2d1.258!3d45.83!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f9349c256e6f7b%3A0x400000000000000!2sLimoges!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr`}
+              title="Zone d'intervention"
+              src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200000!2d2.00!3d48.00!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDAwJzAwLjAiTiAywrAwMCcwMC4wIkU!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr`}
               className="w-full h-full grayscale-[0.5] contrast-[1.1]"
               style={{ border: 0 }}
               allowFullScreen={false}

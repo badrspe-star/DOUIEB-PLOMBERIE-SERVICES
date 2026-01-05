@@ -27,8 +27,8 @@ const Navbar: React.FC = () => {
                 <Droplets className="h-6 w-6 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-extrabold text-neutral-900 leading-tight tracking-tight">DOUIEB</span>
-                <span className="text-xs font-semibold text-[#6fc201] tracking-wider uppercase">Plomberie Services</span>
+                <span className="text-xl font-extrabold text-[#1a2e05] leading-tight tracking-tight uppercase">AQUA-TECH</span>
+                <span className="text-xs font-semibold text-[#6fc201] tracking-wider uppercase">Plomberie Expertise</span>
               </div>
             </Link>
           </div>
