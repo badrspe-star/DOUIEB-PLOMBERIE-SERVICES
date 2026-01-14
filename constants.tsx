@@ -11,22 +11,22 @@ import {
 } from 'lucide-react';
 
 export const COMPANY = {
-  name: "AQUA-TECH SERVICES",
-  type: "Artisan Plombier Chauffagiste",
-  city: "Val-de-Serein",
-  address: "42 Avenue des Artisans, 00000 Val-de-Serein",
-  phone: "+33123456789",
-  phoneDisplay: "01 23 45 67 89",
-  rating: 4.8,
-  reviewsCount: 52,
+  name: "AMD PLOMBERIE",
+  type: "Plombier à Mayotte",
+  city: "Chiconi",
+  address: "6 venelle Malbar, Chiconi 97670, Mayotte",
+  phone: "+262639210722",
+  phoneDisplay: "+262 639 21 07 22",
+  rating: 4.9,
+  reviewsCount: 24,
   hours: {
-    lundi: "Ouvert 24h/24",
-    mardi: "Ouvert 24h/24",
-    mercredi: "Ouvert 24h/24",
-    jeudi: "Ouvert 24h/24",
-    vendredi: "Ouvert 24h/24",
-    samedi: "Ouvert 24h/24",
-    dimanche: "09:00–18:00"
+    lundi: "07:00–12:00, 13:30–16:30",
+    mardi: "07:00–12:00, 13:30–16:30",
+    mercredi: "07:00–12:00, 13:30–16:30",
+    jeudi: "07:00–12:00",
+    vendredi: "13:30–16:30",
+    samedi: "08:00–12:00, 13:30–15:30",
+    dimanche: "Fermé"
   }
 };
 
@@ -34,47 +34,47 @@ export const SERVICES = [
   {
     id: 'depannage',
     title: "Dépannage d'Urgence",
-    description: "Intervention immédiate 24h/24 pour toutes vos urgences hydrauliques.",
+    description: "Intervention rapide pour toutes vos urgences hydrauliques à Chiconi.",
     icon: <Wrench className="w-8 h-8" />,
-    fullDescription: "Une fuite d'eau critique ou une canalisation bouchée ? Nos experts interviennent en moins de 30 minutes dans toute la région de Val-de-Serein pour sécuriser votre domicile."
+    fullDescription: "Une fuite d'eau ou une canalisation bouchée ? AMD Plomberie intervient avec réactivité à Chiconi et dans les environs pour sécuriser vos installations."
   },
   {
     id: 'chauffage',
-    title: "Thermique & Chauffage",
-    description: "Installation et maintenance de vos systèmes de chauffage et chauffe-eau.",
+    title: "Chauffe-eau & Thermique",
+    description: "Installation et maintenance de vos systèmes de production d'eau chaude.",
     icon: <Flame className="w-8 h-8" />,
-    fullDescription: "Nous installons et entretenons vos chaudières et pompes à chaleur pour garantir votre confort thermique. Optimisez votre consommation énergétique avec nos solutions modernes."
+    fullDescription: "Nous assurons la pose et l'entretien de vos chauffe-eau solaires ou électriques, adaptés au climat de Mayotte pour un confort durable."
   },
   {
     id: 'sanitaire',
     title: "Réseaux Sanitaires",
-    description: "Expertise complète en tuyauterie, robinetterie et évacuation.",
+    description: "Expertise complète en tuyauterie, robinetterie et évacuation aux normes.",
     icon: <Droplets className="w-8 h-8" />,
-    fullDescription: "Installation, modification ou réparation de vos circuits d'eau. Nous utilisons des matériaux de haute qualité pour des raccordements durables et sans fuite."
+    fullDescription: "Installation et réparation de vos circuits d'eau. Nous garantissons des raccordements étanches et robustes pour faire face aux contraintes locales."
   },
   {
     id: 'salle-de-bain',
     title: "Projets Salle de Bain",
-    description: "De la conception à la réalisation de votre espace de bain sur-mesure.",
+    description: "Rénovation et création d'espaces sanitaires modernes et fonctionnels.",
     icon: <Bath className="w-8 h-8" />,
-    fullDescription: "Transformez votre salle de bain en un espace de détente. Douche italienne, robinetterie encastrée et carrelage : nous gérons votre projet de A à Z."
+    fullDescription: "Confiez-nous la transformation de votre salle de bain. De la pose de douches à l'installation de vasques, nous réalisons vos projets de A à Z."
   }
 ];
 
 export const VALUES = [
   {
-    title: "Disponibilité Totale",
-    description: "Interventions d'urgence garanties de jour comme de nuit, 7 jours sur 7.",
+    title: "Expertise Locale",
+    description: "Une connaissance approfondie des installations et des besoins spécifiques à Mayotte.",
     icon: <Clock className="w-6 h-6 text-[#6fc201]" />
   },
   {
-    title: "Savoir-faire Expert",
-    description: "Une équipe d'artisans qualifiés bénéficiant de 15 ans d'expérience métier.",
+    title: "Travail Soigné",
+    description: "Engagement sur la qualité des finitions et le respect des délais convenus.",
     icon: <ShieldCheck className="w-6 h-6 text-[#6fc201]" />
   },
   {
-    title: "Éthique & Prix",
-    description: "Tarification claire, devis détaillés et conseils pour économiser l'eau.",
+    title: "Conseils & Devis",
+    description: "Transparence totale sur les tarifs et accompagnement technique personnalisé.",
     icon: <Star className="w-6 h-6 text-[#6fc201]" />
   }
 ];

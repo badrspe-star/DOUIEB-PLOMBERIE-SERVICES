@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-black mb-4 uppercase">Contactez-nous</h1>
           <p className="text-[#f0f9e6] max-w-xl mx-auto font-medium">
-            Une question ou une demande d'intervention ? Nous vous répondons avec réactivité.
+            Une question ou une demande d'intervention à Chiconi ? Nous vous répondons avec réactivité.
           </p>
         </div>
       </div>
@@ -34,7 +34,7 @@ const Contact: React.FC = () => {
                     <Phone className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-xs text-neutral-400 font-bold uppercase tracking-widest">Urgence</p>
+                    <p className="text-xs text-neutral-400 font-bold uppercase tracking-widest">Contact Direct</p>
                     <a href={`tel:${COMPANY.phone}`} className="text-lg font-bold text-[#1a2e05] hover:text-[#6fc201] transition-colors">{COMPANY.phoneDisplay}</a>
                   </div>
                 </div>
@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <p className="text-xs text-neutral-400 font-bold uppercase tracking-widest">Email</p>
-                    <p className="text-lg font-bold text-[#1a2e05]">contact@douieb-plomberie.fr</p>
+                    <p className="text-lg font-bold text-[#1a2e05]">contact@amdplomberie.yt</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -60,12 +60,12 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="bg-[#f0f9e6] p-8 rounded-3xl border border-[#6fc201]/10 text-[#1a2e05]">
-              <h3 className="text-xl font-bold mb-6 uppercase tracking-wider">Horaires de Service</h3>
+              <h3 className="text-xl font-bold mb-6 uppercase tracking-wider">Horaires d'Ouverture</h3>
               <ul className="space-y-3 text-sm font-semibold">
                 {Object.entries(COMPANY.hours).map(([day, hour]) => (
                   <li key={day} className="flex justify-between border-b border-[#6fc201]/10 pb-2">
                     <span className="capitalize text-neutral-500">{day}</span>
-                    <span className={hour.includes('24h') ? 'text-[#6fc201]' : 'text-neutral-700'}>{hour}</span>
+                    <span className={hour === 'Fermé' ? 'text-neutral-400' : 'text-neutral-700'}>{hour}</span>
                   </li>
                 ))}
               </ul>
@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
                   </div>
                   <h2 className="text-3xl font-black text-[#1a2e05]">Message transmis !</h2>
                   <p className="text-neutral-500 max-w-sm">
-                    Nous avons bien reçu votre demande. Un artisan spécialisé reviendra vers vous très rapidement.
+                    Nous avons bien reçu votre demande. AMD Plomberie reviendra vers vous très rapidement.
                   </p>
                   <button 
                     onClick={() => setSubmitted(false)}
@@ -101,28 +101,28 @@ const Contact: React.FC = () => {
                         <input 
                           required
                           type="text" 
-                          placeholder="Jean Dupont"
+                          placeholder="Votre nom"
                           className="w-full px-4 py-3 rounded-xl border border-neutral-100 bg-neutral-50 focus:border-[#6fc201] focus:ring-4 focus:ring-[#6fc201]/10 outline-none transition-all"
                         />
                       </div>
                       <div className="space-y-2">
-                        <label className="text-sm font-bold text-neutral-600">Email professionnel / personnel</label>
+                        <label className="text-sm font-bold text-neutral-600">Email</label>
                         <input 
                           required
                           type="email" 
-                          placeholder="jean@exemple.fr"
+                          placeholder="email@exemple.fr"
                           className="w-full px-4 py-3 rounded-xl border border-neutral-100 bg-neutral-50 focus:border-[#6fc201] focus:ring-4 focus:ring-[#6fc201]/10 outline-none transition-all"
                         />
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <label className="text-sm font-bold text-neutral-600">Nature du besoin</label>
+                      <label className="text-sm font-bold text-neutral-600">Sujet de la demande</label>
                       <select className="w-full px-4 py-3 rounded-xl border border-neutral-100 bg-neutral-50 focus:border-[#6fc201] outline-none">
-                        <option>Dépannage Urgent (Fuite, Panne)</option>
-                        <option>Installation Chauffage / Pompe à Chaleur</option>
-                        <option>Projet Salle de Bain</option>
-                        <option>Maintenance annuelle</option>
-                        <option>Autre demande</option>
+                        <option>Dépannage Urgent</option>
+                        <option>Installation Chauffe-eau</option>
+                        <option>Rénovation Sanitaire</option>
+                        <option>Demande de Devis</option>
+                        <option>Autre</option>
                       </select>
                     </div>
                     <div className="space-y-2">
@@ -130,7 +130,7 @@ const Contact: React.FC = () => {
                       <textarea 
                         required
                         rows={6}
-                        placeholder="Expliquez-nous votre situation..."
+                        placeholder="Précisez votre besoin (localisation, type de panne...)"
                         className="w-full px-4 py-3 rounded-xl border border-neutral-100 bg-neutral-50 focus:border-[#6fc201] focus:ring-4 focus:ring-[#6fc201]/10 outline-none transition-all resize-none"
                       ></textarea>
                     </div>

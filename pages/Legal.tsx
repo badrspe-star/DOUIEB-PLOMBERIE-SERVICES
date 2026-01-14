@@ -12,40 +12,40 @@ const Legal: React.FC = () => {
           <section>
             <h2 className="text-xl font-bold text-[#1a2e05] mb-4 uppercase tracking-wider border-b-2 border-[#6fc201] pb-2 inline-block">1. Présentation du site</h2>
             <p className="mt-4">
-              En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 :
+              Conformément aux dispositions de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique :
             </p>
             <ul className="mt-4 space-y-2">
-              <li><strong>Propriétaire :</strong> {COMPANY.name} (EI)</li>
-              <li><strong>Responsable publication :</strong> Service Communication Aqua-Tech</li>
+              <li><strong>Propriétaire :</strong> {COMPANY.name}</li>
+              <li><strong>Responsable publication :</strong> Direction AMD Plomberie</li>
               <li><strong>Siège social :</strong> {COMPANY.address}</li>
-              <li><strong>SIRET :</strong> 123 456 789 00000 (Exemple)</li>
+              <li><strong>Localisation :</strong> Chiconi, Mayotte</li>
               <li><strong>Hébergeur :</strong> Vercel Inc.</li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-[#1a2e05] mb-4 uppercase tracking-wider border-b-2 border-[#6fc201] pb-2 inline-block">2. CGU</h2>
+            <h2 className="text-xl font-bold text-[#1a2e05] mb-4 uppercase tracking-wider border-b-2 border-[#6fc201] pb-2 inline-block">2. Conditions d'utilisation</h2>
             <p className="mt-4">
-              L'utilisation du site implique l'acceptation pleine et entière des conditions générales d'utilisation.
+              L'accès au site et son utilisation sont réservés à un usage strictement personnel. Toute utilisation à des fins commerciales ou publicitaires est interdite sans autorisation préalable.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold text-[#1a2e05] mb-4 uppercase tracking-wider border-b-2 border-[#6fc201] pb-2 inline-block">3. Propriété intellectuelle</h2>
             <p className="mt-4">
-              Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site est interdite.
+              L'ensemble du contenu de ce site (textes, logos, images) est la propriété exclusive de AMD Plomberie. Toute reproduction totale ou partielle est interdite.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold text-[#1a2e05] mb-4 uppercase tracking-wider border-b-2 border-[#6fc201] pb-2 inline-block">4. Données personnelles</h2>
             <p className="mt-4">
-              Vos données sont collectées uniquement via le formulaire de contact pour le traitement de vos demandes de devis ou d'intervention.
+              Les informations collectées via le formulaire de contact sont destinées exclusivement au traitement de vos demandes par AMD Plomberie et ne font l'objet d'aucune cession à des tiers.
             </p>
           </section>
 
           <div className="pt-12 border-t border-neutral-100 text-sm italic text-neutral-400">
-            Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}
+            Mise à jour le : {new Date().toLocaleDateString('fr-FR')}
           </div>
         </div>
       </div>

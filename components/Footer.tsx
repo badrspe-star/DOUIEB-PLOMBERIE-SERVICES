@@ -10,9 +10,9 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Brand & Stats */}
         <div>
-          <h3 className="text-[#1a2e05] text-xl font-extrabold mb-6">AQUA-TECH <span className="text-[#6fc201]">SERVICES</span></h3>
+          <h3 className="text-[#1a2e05] text-xl font-extrabold mb-6">AMD <span className="text-[#6fc201]">PLOMBERIE</span></h3>
           <p className="mb-6 text-sm text-neutral-600 leading-relaxed">
-            Votre artisan expert de proximité. Savoir-faire, transparence et réactivité pour tous vos besoins en installation et dépannage.
+            Votre artisan plombier de confiance à Mayotte. Qualité, transparence et réactivité pour tous vos dépannages et installations.
           </p>
           <div className="flex items-center space-x-2 bg-[#f0f9e6] p-3 rounded-lg w-fit border border-[#6fc201]/10">
             <div className="flex text-[#6fc201]">
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
             </li>
             <li className="flex items-center space-x-3">
               <Mail className="w-5 h-5 text-[#6fc201] flex-shrink-0" />
-              <span className="text-neutral-600">contact@aqua-tech-services.fr</span>
+              <span className="text-neutral-600">contact@amdplomberie.yt</span>
             </li>
           </ul>
         </div>
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
             {Object.entries(COMPANY.hours).map(([day, hour]) => (
               <li key={day} className="flex justify-between border-b border-[#f0f9e6] pb-1">
                 <span className="capitalize text-neutral-500">{day}</span>
-                <span className={hour === "Ouvert 24h/24" ? "text-[#6fc201] font-bold" : "text-neutral-700"}>{hour}</span>
+                <span className={hour === "Fermé" ? "text-neutral-400" : "text-neutral-700"}>{hour}</span>
               </li>
             ))}
           </ul>
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 pt-8 border-t border-[#f0f9e6] text-center text-xs text-neutral-400">
-        <p>&copy; {new Date().getFullYear()} AQUA-TECH SERVICES. Une expertise durable pour votre habitat.</p>
+        <p>&copy; {new Date().getFullYear()} AMD PLOMBERIE. L'expertise artisanale au cœur de Mayotte.</p>
       </div>
     </footer>
   );
